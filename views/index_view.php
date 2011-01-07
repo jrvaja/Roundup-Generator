@@ -35,13 +35,13 @@
         <textarea name="assets" id="assets" required autofocus><?php if ( isset($_POST['assets']) ) echo $_POST['assets']; ?></textarea>
         <input type="submit" value="Submit" id="submit" name="submit" />
         <?php 
-        if ( isset($error) && $error !== '' ) {
+        if ( !empty($error) ) {
             echo "<p class='result'> $error </p>";
         }
         ?>
         
         <?php 
-        if ( isset($link) ) {
+        if ( !empty($link) ) {
             echo "<p class='result'> $link </p>";
         }
     ?>
