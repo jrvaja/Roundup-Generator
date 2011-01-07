@@ -1,0 +1,321 @@
+body, html { height: 100%; width: 100%; } 
+
+body {
+	font-family: "Myriad Pro", helvetica, arial, sans-serif;
+	text-align: center;
+	
+	background: #666;
+	background: -webkit-gradient(
+		linear,
+		left top, right bottom,
+		from(#545454),
+		color-stop(.5, #7e7e7e),
+		to(#545454)
+	);
+	
+	background: -moz-linear-gradient(
+		45deg,
+		#545454,
+		#7e7e7e 50%,
+		#545454
+	);
+	
+	background: linear-gradient(
+		45deg,
+		#545454,
+		#7e7e7e 50%,
+		#545454
+	);	
+	
+	color: #e3e3e3;
+	font-size: 30px;
+	margin: auto;
+	
+	
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+	
+	-moz-box-orient: horizontal; /* the default, so not really necessary here */
+	-webkit-box-orient: horizontal;
+	box-orient: horizontal;
+	
+	-moz-box-pack: center;
+	-moz-box-align: center;
+	
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	
+	box-pack: center;
+	box-align: center;
+}
+
+.noDisplayBox body {
+	width: 600px;
+	margin: 60px auto 0;
+}
+
+body > div { 
+	position: relative; 
+	width: 600px;
+}
+
+@media screen and (min-height : 500px) {
+	.noDisplayBox body { margin-top: 200px !important; }
+}
+
+h1 {
+	font-size: 25px;
+	text-align: right;	
+	position: relative;
+	z-index: 2;
+	color: #e3e3e3;
+	font-weight: normal;
+	text-shadow: 0 1px 0 white;
+}
+
+form {
+	position: relative;
+}
+
+textarea {
+	width: 540px;
+	height: 340px;
+	
+	-webkit-box-shadow: 0 3px 10px rgba(0,0,0,.3); 
+	-moz-box-shadow: 0 3px 10px rgba(0,0,0,.3); 
+	box-shadow: 0 3px 10px rgba(0,0,0,.3); 		
+	
+	color: #292929;
+	font-size: 15px;	
+	
+	-webkit-border-radius: 20px 0 0 0;
+	-moz-border-radius: 20px 0 0 0;
+	border-radius: 20px 0 0 0;
+			
+	border: none;
+	border-top: 1px solid white;
+	background: -webkit-gradient(
+		linear,
+		left top, left bottom,
+		from(#e3e3e3),
+		color-stop(10%, white),
+		to(white)
+	);
+	
+	background: -moz-linear-gradient(
+		top,
+		#e3e3e3,
+		white 10%,
+		white
+	);
+	
+	background: linear-gradient(
+		top,
+		#e3e3e3,
+		white 10%,
+		white
+	);	
+	
+	padding: 20px 30px;
+	line-height: 1.6em;
+}
+
+textarea:focus {
+	outline: none;
+	border: 1px solid white;
+}
+
+input {
+	padding: 10px 20px;
+	font-weight: bold;
+	font-size: 20px;
+	
+	-webkit-webkit-border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	border-radius: 5px; 
+
+	border: none;
+	border: 1px solid #385f15;
+	background: #37680c;
+	background: -webkit-gradient(
+		linear,
+		left top, right bottom,
+		from(#447a14),
+		color-stop(50%, #37680c),
+		to(#447a14)
+	);
+	
+	background: -moz-linear-gradient(
+		45deg,
+		#447a14,
+		#37680c 50%,
+		#447a14
+	);
+	
+	background: linear-gradient(
+		45deg,
+		#447a14,
+		#37680c 50%,
+		#447a14
+	);	
+	
+	color: #224702;
+	cursor: pointer;	
+	float: right;
+	margin-top: 10px;
+	
+	-webkit-box-shadow: inset 0 0 0 1px #5f9d27, 0 1px 2px rgba(0,0,0,.3);
+	-moz-box-shadow: inset 0 0 0 1px #5f9d27, 0 1px 2px rgba(0,0,0,.3);
+	box-shadow: inset 0 0 0 1px #5f9d27, 0 1px 2px rgba(0,0,0,.3);	
+	
+	clear: both;
+	display: block;
+}
+
+input:hover {
+	color: white;
+	
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+	box-shadow: 0 1px 2px rgba(0,0,0,.5);
+		
+	background: #37680c;
+	background: -webkit-gradient(
+		linear,
+		left top, right bottom,
+		from(#37680c),
+		color-stop(50%, #447a14),
+		to(#37680c)
+	);
+	
+	background: -moz-linear-gradient(
+		45deg,
+		#37680c,
+		#447a14 50%,
+		#37680c
+	);
+	
+	background: linear-gradient(
+		45deg,
+		#37680c,
+		#447a14 50%,
+		#37680c
+	);	
+}
+
+#site_select {
+	position: absolute;
+	left: 0;
+	top: -40px;
+	z-index: 2;
+	
+	background: #37680c;
+	background: -webkit-gradient(
+		linear,
+		left top, right bottom,
+		from(#447a14),
+		color-stop(50%, #37680c),
+		to(#447a14)
+	);
+	
+	background: -moz-linear-gradient(
+		45deg,
+		#447a14,
+		#37680c 50%,
+		#447a14
+	);
+	
+	background: linear-gradient(
+		45deg,
+		#447a14,
+		#37680c 50%,
+		#447a14
+	);	
+	color: white;
+	border: none;
+	cursor: pointer;
+	height: 20px;
+	border: 1px solid #385f15;
+}
+
+
+/* For Mozilla and older browsers */
+#site_select option { color: black; }
+
+a {
+	color: white;
+	text-decoration: none;	
+}
+
+a:hover {
+	border-bottom: 1px solid white;
+}
+
+
+.result {
+	display: box;
+	font-size: 20px;
+	float: left;
+	max-width: 75%;
+	text-align: left;	
+	color: white;
+}
+
+.result a {
+ border-bottom: 1px dotted #5f9d27;	
+}
+
+.result a:hover {
+	 border-bottom: 1px solid #5f9d27;	
+}
+
+h1 a {
+	cursor: pointer;
+	color: #37680c;
+	text-shadow: 0 1px 0 black;
+	
+	-webkit-transition: color 1s;
+	-o-transition: color 1s;
+	-moz-transition: color 1s;
+	transition: color 1s;
+	
+	position: relative;
+	display: inline-block;
+	
+	-webkit-transition: -webkit-transform .4s;
+	-o-transition: -webkit-transform .4s;
+	-moz-transition: -webkit-transform .4s;
+	transition: -webkit-transform .4s;
+	outline: none;
+}
+
+h1 a:hover {
+	text-decoration: none;
+	border: none;
+	-webkit-transform: scale(1.2);
+	color: #f9e06e;
+}
+
+.overlay {
+	background: black;
+	background: rgba(0,0,0,.7) url(../imgs/asterisk_yellow.png) no-repeat 5% 48%;
+	color: white;
+	padding: 20px 20px 20px 70px;
+	position: absolute;
+	width: 430px;
+	font-size: 15px;
+	text-align: left;
+	left: 50%;
+	margin-left: -250px;
+	top: 50%;
+	cursor: pointer;
+	border: 1px dashed black;
+	display: none;
+	
+}
+
+.overlay p {
+	margin: 0;
+	padding: 0;
+}
