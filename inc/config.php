@@ -1,9 +1,9 @@
 <?php
 
 /* Only email errors */
-ini_set('display_errors', 1);
+ini_set('display_errors', 0);
 
-//set_error_handler('generator_error_handler');
+set_error_handler('generator_error_handler');
 function generator_error_handler($number, $message, $file, $line, $vars)
 {
 	// Only email errors to me; no notices
