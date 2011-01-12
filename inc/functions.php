@@ -15,7 +15,7 @@ class Controller {
 		// Has the form been submitted, and assets were added?
 		if ( isset($_POST['submit']) ) {
 		
-			$this->selected_template = $_POST['site_select'];
+			$this->selected_template = (string) $_POST['site_select'];
 		
 			if ( strlen($_POST['assets']) > 0 ) {
 				$data = $this->init();
